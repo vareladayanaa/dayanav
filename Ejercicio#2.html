@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    /*
+    Realizar un pequeño juego con una pregunta de adivinanza dando tres intentos.Si logra adivinar mandando mensaje como
+    felicitación de no hacertar en los 3 intentos mandamos mensaje de que ha perdido.Usando ciclo for.
+    */
+
+   var respuesta = "Tegucigalpa";
+   var acierto= false;
+
+   for(var contador=1; contador<=3; contador++){
+       var respUsuario= prompt("Capital De Honduras:  ")
+       if(respUsuario.toUpperCase()===respuesta){
+           var arcierto=true
+           document.write(`Felicidades, acertastes en el intento ${contador}`)
+           break
+       }
+   }
+   if(acierto===false){
+       document.write(`Lo sentimos, ya no tienes intentos`)
+   }
+
+</script>
+<body>
+    
+</body>
+</html>
